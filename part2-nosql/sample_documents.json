@@ -1,0 +1,90 @@
+[
+  {
+    "_id": "ELEC1001",
+    "category": "Electronics",
+    "name": "UltraView 55 Smart TV",
+    "brand": "VisionX",
+    "price": 48999,
+    "currency": "INR",
+    "warranty": {
+      "period_months": 24,
+      "type": "manufacturer"
+    },
+    "specs": {
+      "screen_size_inches": 55,
+      "resolution": "4K UHD",
+      "voltage": "220-240V",
+      "ports": [
+        "HDMI",
+        "USB",
+        "Ethernet"
+      ]
+    },
+    "tags": [
+      "smart-tv",
+      "entertainment",
+      "wifi-enabled"
+    ],
+    "stock": {
+      "warehouse": "BLR-01",
+      "available_units": 18
+    }
+  },
+  {
+    "_id": "CLOT2001",
+    "category": "Clothing",
+    "name": "Classic Denim Jacket",
+    "brand": "UrbanWeave",
+    "price": 2799,
+    "currency": "INR",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "material": {
+      "outer": "100% cotton denim",
+      "lining": "polyester blend"
+    },
+    "variants": [
+      {
+        "color": "Blue",
+        "sku": "UJ-BLU-M",
+        "available": true
+      },
+      {
+        "color": "Black",
+        "sku": "UJ-BLK-L",
+        "available": true
+      }
+    ],
+    "care_instructions": [
+      "machine wash cold",
+      "do not bleach"
+    ]
+  },
+  {
+    "_id": "GROC3001",
+    "category": "Groceries",
+    "name": "Organic Whole Wheat Flour",
+    "brand": "FarmPure",
+    "price": 145,
+    "currency": "INR",
+    "expiry_date": "2024-12-20",
+    "weight_kg": 5,
+    "nutritional_info": {
+      "serving_size_g": 100,
+      "calories": 340,
+      "protein_g": 12,
+      "fiber_g": 10
+    },
+    "storage": {
+      "temperature": "cool and dry place",
+      "opened_shelf_life_days": 30
+    },
+    "allergens": [
+      "gluten"
+    ]
+  }
+]

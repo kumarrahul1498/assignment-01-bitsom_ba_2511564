@@ -1,0 +1,9 @@
+## Database Recommendation
+
+For a healthcare startup building a patient management system, I would recommend MySQL as the primary database. Patient records, appointments, prescriptions, billing, and treatment histories require strong consistency, transactional reliability, and clear relational structure. In this setting, ACID guarantees matter much more than flexible schema evolution. For example, if a patient is admitted, assigned a doctor, billed, and prescribed medication, the system cannot afford partial writes or conflicting records. MySQL’s transactional model is better suited for that than MongoDB’s more flexible BASE-oriented style.
+
+The CAP theorem also supports this choice. In a core hospital system, consistency is typically more important than high availability under partition. If the network has an issue, it is safer for the system to reject or delay some writes than to accept inconsistent medical data. Healthcare workflows are operational systems first, so correctness is the top priority.
+
+MongoDB could still be useful for selected supporting workloads. Its flexible document model is helpful when data is semi-structured, such as storing device payloads, doctor notes with variable fields, or logs from multiple external systems. But for the core patient management platform, the source of truth should remain relational.
+
+My recommendation would change slightly if the startup also needed a fraud detection module. Fraud detection often consumes high-volume event data, clickstreams, claims patterns, and anomaly features that may be semi-structured and fast-changing. In that case, I would still keep MySQL for the core OLTP patient system, but I would add a secondary analytical or document-oriented store for fraud signals. So the best answer becomes a hybrid architecture: MySQL for transactional healthcare records, and a more flexible system such as MongoDB or a data platform for fraud analytics.
