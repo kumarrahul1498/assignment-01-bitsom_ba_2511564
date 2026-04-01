@@ -1,4 +1,4 @@
-# Assignment 01
+# Assignment 02
 
 This repository follows the required submission structure for the Assignment.
 
