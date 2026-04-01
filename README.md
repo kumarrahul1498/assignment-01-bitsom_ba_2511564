@@ -1,5 +1,5 @@
-# Assignment 2
+# Assignment 1
 
 This repository follows the required submission structure for the Assignment.
 
-> Repository name: `assignment-02-bitsom_ba_2511564` 
+> Repository name: `assignment-01-bitsom_ba_2511564` 
